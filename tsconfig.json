@@ -7,6 +7,9 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
     "allowJs": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -15,5 +18,5 @@
     "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": ["build, node_modules"]
+  "exclude": ["node_modules", "build", "**/*spec.ts"]
 }
